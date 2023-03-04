@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+  }
+
+
+button1 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 40px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+  }
+  
+  button1:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+  }
+  
+  button1 svg {
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  
+  .play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+  }
+  
+  button1:hover svg {
+    transform: scale(3) translate(50%);
+  }
+  
+  .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  
+  button1:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+  
+  button1:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+  }
+
+
+
+.wrapper{
+    width: 40rem;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 100px;
+    margin: 10% auto;
+}
+
+.wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:transform 400ms;
+}
+
+.wrapper:hover img{
+    transform:scale(1.5) ;
+}
+
+p1{
+font-size: 60px;
+color:rgb(200, 250, 2);
+margin-top: 10%;
+}

@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(to bottom, rgb(225, 159, 18), rgb(236, 34, 206));
+    background-repeat: no-repeat; /* 禁止背景重複 */
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+p{
+    font-size: 40px;
+}
+nav{
+    margin-left: 10%;
+    margin-bottom: 0px;
+    font-size: 70px;
+}
+li{
+    color: rgb(83, 42, 165);
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+color: rgb(212, 226, 16);
+
+}
